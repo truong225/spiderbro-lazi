@@ -11,9 +11,9 @@ ROOT_URL = "https://lazi.vn/"
 class LaziSpider(scrapy.Spider):
     name = "lazi"
 
-    myclient = pymongo.MongoClient("mongodb://truongtd2:123123@42.113.207.170")
+    myclient = pymongo.MongoClient("mongodb://truongtd2:123123@localhost:27017")
     db = myclient["crawl"]
-    collection = db["web_crawl"]
+    collection = db["demo"]
 
     def insert_to_db(self, data):
         inserted_id = self.collection.insert_one(data)
@@ -26,7 +26,8 @@ class LaziSpider(scrapy.Spider):
 
     def start_requests(self):
         urls = [
-            "https://lazi.vn/edu/lists/toan-hoc"
+            "https://lazi.vn/edu/lists/toan-hoc?start=8235"
+         #   "https://lazi.vn/edu/lists/toan-hoc"
         ]
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
