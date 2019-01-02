@@ -1,0 +1,562 @@
+INFO:scrapy.utils.log:Scrapy 1.5.1 started (bot: lazibot)
+INFO:scrapy.utils.log:Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.19.0, Twisted 18.9.0, Python 3.6.7 (default, Oct 22 2018, 11:32:17) - [GCC 8.2.0], pyOpenSSL 18.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Linux-4.15.0-43-generic-x86_64-with-Ubuntu-18.04-bionic
+INFO:scrapy.crawler:Overridden settings: {'BOT_NAME': 'lazibot', 'DOWNLOAD_DELAY': 0.5, 'NEWSPIDER_MODULE': 'lazibot.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['lazibot.spiders']}
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+DEBUG:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/robots.txt> (referer: None)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/lists/toan-hoc> (referer: None)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/giai-phuong-trinh-bac-2-va-ve-do-thi-ham-so-y-x2-2x-3-0> (referer: https://lazi.vn/edu/lists/toan-hoc)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd59b88> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/lists/toan-hoc?start=15> (referer: https://lazi.vn/edu/lists/toan-hoc)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tim-x-biet-x-12-27> (referer: https://lazi.vn/edu/lists/toan-hoc)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0dedacf88> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/rut-gon-218-450-332> (referer: https://lazi.vn/edu/lists/toan-hoc)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/gieo-mot-con-suc-sac-neu-mat-1-cham-hoac-2-cham-xuat-hien-ta-gieo-tiep-lan-nua> (referer: https://lazi.vn/edu/lists/toan-hoc)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/thay-chu-nhiem-co-16-cuon-sach-doi-mot-khac-nhau-gom-8-cuon-sach-toan-5-cuon-sach-ly-va-3-cuon> (referer: https://lazi.vn/edu/lists/toan-hoc)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddceba48> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-ab-ac-la-2-tiep-tuyen-cua-duong-tron-o-r-b-c-la-tiep-diem-goi-giao-diem-cua-bc-va-ao-la-f-ve-ch> (referer: https://lazi.vn/edu/lists/toan-hoc)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc82f48> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc37fc8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/chung-minh-tu-giac-aehf-la-hinh-chu-nhat> (referer: https://lazi.vn/edu/lists/toan-hoc)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd264c8> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd49cc8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tim-x-y-x-3-x-5-voi-x-3> (referer: https://lazi.vn/edu/lists/toan-hoc)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/duong-thang-y-ax-b-cat-truc-ox-tai-diem-a-co-hoanh-do-bang-3-cat-truc-oy-tai-diem-co-tung-do-bang-2-tim-a-b> (referer: https://lazi.vn/edu/lists/toan-hoc)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddce1a08> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/ba-duong-cao-cua-tam-giac-mnp-bang-nhau-hay-so-sanh-ba-canh-cua-tam-giac-do> (referer: https://lazi.vn/edu/lists/toan-hoc)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc63b88> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/mot-hinh-chu-nhat-co-chu-vi-la-30m-neu-tang-chieu-dai-them-2m-va-tang-chieu-rong-them-3m-thi-duoc> (referer: https://lazi.vn/edu/lists/toan-hoc)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd53c48> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd2af08> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tim-dieu-kien-xac-dinh-va-rut-gon-bieu-thuc-a-tinh-gia-tri-cua-a-tai-x-3> (referer: https://lazi.vn/edu/lists/toan-hoc)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0df35e788> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-hinh-thang-abcd-co-a-d-90-do-cd-2ab-2ad-ve-dh-vuong-ac-tai-h-goi-m-p-q-lan-luot-la-trung-diem> (referer: https://lazi.vn/edu/lists/toan-hoc)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc37948> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/giai-he-phuong-trinh-sau-35> (referer: https://lazi.vn/edu/lists/toan-hoc?start=15)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd56748> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/mot-binh-dung-12-qua-cau-trong-do-co-5-qua-xanh-4-qua-trang-3-qua-vang-chon-ngau-nhien-ra-3-qua> (referer: https://lazi.vn/edu/lists/toan-hoc)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/lists/toan-hoc?start=30> (referer: https://lazi.vn/edu/lists/toan-hoc?start=15)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/xac-dinh-cac-nghiem-x1-x2-cua-phuong-trinh-thoa-man-x1-4x2-3> (referer: https://lazi.vn/edu/lists/toan-hoc?start=15)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/bac-an-gui-vao-quy-tiet-kiem-x-nghin-dong-voi-lai-suat-moi-thang-la-r-r-la-mot-so-duong-cho-truoc> (referer: https://lazi.vn/edu/lists/toan-hoc)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0df35e788> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/mot-mieng-dat-hinh-chu-nhat-co-dien-tich-la-100-met-vuong-duoc-mo-rong-moi-chieu-them-10-thi-dien> (referer: https://lazi.vn/edu/lists/toan-hoc?start=15)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc31848> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddbf9f48> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-goi-e-f-lan-luot-la-trung-diem-cua-ba-bc-lay-diem-m-tren-doan-thang-ef-m-khac> (referer: https://lazi.vn/edu/lists/toan-hoc?start=15)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc97708> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddcc7408> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/chung-minh-cac-bat-dang-thuc-sau-22> (referer: https://lazi.vn/edu/lists/toan-hoc?start=15)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc632c8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/chung-minh-tu-giac-abhe-la-hinh-chu-nhat> (referer: https://lazi.vn/edu/lists/toan-hoc?start=15)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tim-gioi-han-cua-day-so-2> (referer: https://lazi.vn/edu/lists/toan-hoc?start=15)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc676c8> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0dedcbb08> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/chung-minh-dang-thuc-sau-30> (referer: https://lazi.vn/edu/lists/toan-hoc?start=15)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc2de48> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-m-la-trung-diem-cua-ac-tren-tia-doi-cua-tia-mb-lay-diem-n-sao-cho-nm-mb-chung-minh> (referer: https://lazi.vn/edu/lists/toan-hoc?start=15)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0dedefd48> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tu-diem-a-nam-ngoai-duong-tron-o-ke-hai-tiep-tuyen-ab-ac-den-duong-tron-o-b-c-la-2-tiep-diem-ke> (referer: https://lazi.vn/edu/lists/toan-hoc?start=15)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc46fc8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-a-4-42-43-44-499-4100-chung-to-a-chia-het-cho-5> (referer: https://lazi.vn/edu/lists/toan-hoc?start=15)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc35748> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/co-133-quyen-vo-80-but-bi-170-tap-giay-nguoi-ta-chia-vo-but-bi-giay-thanh-cac-phan-thuong-deu-nhau> (referer: https://lazi.vn/edu/lists/toan-hoc?start=15)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-a-b-la-2-so-thuc-sao-cho-a3-b3-2-chung-minh-0-a-b-2> (referer: https://lazi.vn/edu/lists/toan-hoc?start=30)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd4ed88> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-phuong-trinh-x2-m-1x-5m-6-0-giai-phuong-trinh-khi-m-1> (referer: https://lazi.vn/edu/lists/toan-hoc?start=30)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd2af08> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc5df88> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/phan-tich-da-thuc-thanh-nhan-tu-6x2-9xy> (referer: https://lazi.vn/edu/lists/toan-hoc?start=30)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc5fa08> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/biet-a-b-7-ab-60-tinh-a3-b3> (referer: https://lazi.vn/edu/lists/toan-hoc?start=30)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddcd77c8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/lists/toan-hoc?start=45> (referer: https://lazi.vn/edu/lists/toan-hoc?start=30)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tim-gtln-va-gtnn-cua-p-x-1-2-x> (referer: https://lazi.vn/edu/lists/toan-hoc?start=30)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd4c788> to DB successfully
+INFO:scrapy.extensions.logstats:Crawled 37 pages (at 37 pages/min), scraped 0 items (at 0 items/min)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-phuong-trinh-x2-2m-1x-m2-2m-3-0-phuong-trinh-co-2-ngiem-phan-biet-x1-x2-thoa-man-x1-x2-2> (referer: https://lazi.vn/edu/lists/toan-hoc?start=30)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd55088> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/mot-o-to-di-tu-a-den-b-het-6-gio-hoi-o-to-do-di-tu-a-den-b-het-bao-nhieu-thoi-gian-neu-no-di-voi> (referer: https://lazi.vn/edu/lists/toan-hoc?start=30)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddcd77c8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-3-so-a-b-c-0-chung-minh-bat-dang-thuc-sau> (referer: https://lazi.vn/edu/lists/toan-hoc?start=30)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc427c8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/thu-gon-bieu-thuc-x-1x2-x-1-x-1x2-x-1> (referer: https://lazi.vn/edu/lists/toan-hoc?start=30)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tim-x-biet-2xx-2017-x-2017-0> (referer: https://lazi.vn/edu/lists/toan-hoc?start=30)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0df35e688> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/giai-he-phuong-trinh-sau-34> (referer: https://lazi.vn/edu/lists/toan-hoc?start=30)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tim-x-thuoc-z-de-x-3-la-boi-cua-x-1> (referer: https://lazi.vn/edu/lists/toan-hoc?start=30)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc34f88> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0dedcb6c8> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddcf3dc8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/giai-phuong-trinh-nghiem-nguyen-9x2-6x-y3> (referer: https://lazi.vn/edu/lists/toan-hoc?start=30)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0df36bd88> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tinh-gia-tri-bieu-thuc-a-rut-gon-bieu-thuc-b> (referer: https://lazi.vn/edu/lists/toan-hoc?start=30)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/thuc-hien-phep-tinh-a-32-56-88-25-b-2019-680-735-320> (referer: https://lazi.vn/edu/lists/toan-hoc?start=15)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc4dd48> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/chung-minh-rang-d2-2bc-b-c> (referer: https://lazi.vn/edu/lists/toan-hoc?start=15)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-goc-x-bat-ki-chung-minh-sin4x-cos4x-2sin2x-1> (referer: https://lazi.vn/edu/lists/toan-hoc?start=45)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd41a88> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddcc5448> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddcc7388> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/lists/toan-hoc?start=60> (referer: https://lazi.vn/edu/lists/toan-hoc?start=45)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tim-gia-tri-cua-x-de-a-2x-2-nhan-gia-tri-nguyen> (referer: https://lazi.vn/edu/lists/toan-hoc?start=45)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc826c8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/dien-so-vao-dau-de-68-chia-het-cho-2-3-5-9> (referer: https://lazi.vn/edu/lists/toan-hoc?start=45)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc82488> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/giai-he-phuong-trinh-khi-m-5-1> (referer: https://lazi.vn/edu/lists/toan-hoc?start=45)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd34788> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-hinh-thang-abcd-co-e-la-trung-diem-cua-ad-biet-rang-ab-8cm-ef-10cm-tinh-cd> (referer: https://lazi.vn/edu/lists/toan-hoc?start=45)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tim-gia-tri-lon-nhat-cua-bieu-thuc-2x-5-7> (referer: https://lazi.vn/edu/lists/toan-hoc?start=45)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0e7145b48> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/giai-he-phuong-trinh-khi-m-2-2> (referer: https://lazi.vn/edu/lists/toan-hoc?start=45)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-a-x-x-3x-1-tinh-x-de-a-6-5> (referer: https://lazi.vn/edu/lists/toan-hoc?start=15)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc5ce08> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/chung-minh-so-b-1-2-1-3-1-4-1-50-khong-phai-la-so-tu-nhien> (referer: https://lazi.vn/edu/lists/toan-hoc?start=45)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd38b08> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd3fcc8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/chung-minh-tu-giac-bcnm-la-hinh-thang-chung-minh-tu-giac-amkn-la-hinh-binh-hanh> (referer: https://lazi.vn/edu/lists/toan-hoc?start=45)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc34a48> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc2f948> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/chung-minh-goc-oam-goc-obm-chung-minh-am-bm> (referer: https://lazi.vn/edu/lists/toan-hoc?start=45)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-ab-ac-tu-a-ke-ah-vuong-goc-bc-tai-h-tren-tia-doi-ha-lay-diem-d-sao-cho-hd-ha> (referer: https://lazi.vn/edu/lists/toan-hoc?start=45)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc1f048> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddcc7048> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/em-hay-tim-so-tien-mua-moi-thu-tren-la-bao-nhieu> (referer: https://lazi.vn/edu/lists/toan-hoc?start=45)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/lists/toan-hoc?start=75> (referer: https://lazi.vn/edu/lists/toan-hoc?start=60)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0dedcb7c8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tim-m-de-moi-he-bat-phuong-trinh-co-nghiem> (referer: https://lazi.vn/edu/lists/toan-hoc?start=60)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc2e8c8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/mot-cano-xuoi-mot-khuc-song-dai-90km-roi-nguoc-ve-36km-biet-thoi-gian-xuoi-dong-song-nhieu-hon> (referer: https://lazi.vn/edu/lists/toan-hoc?start=60)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tim-gia-tri-cua-k-trong-cac-truong-hop-sau> (referer: https://lazi.vn/edu/lists/toan-hoc?start=60)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc32388> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/mot-to-co-10-ban-hoc-sinh-trong-do-co-4-ban-nu-lap-nhom-hoc-tap-gom-4-ban-hoc-sinh> (referer: https://lazi.vn/edu/lists/toan-hoc?start=30)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-abc-goi-o-la-tam-duong-tron-noi-tiep-abc-d-va-e-lan-luot-la-tiep-diem-thuoc-bc-ca-m-va-n-lan-luot> (referer: https://lazi.vn/edu/lists/toan-hoc?start=60)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddbf6108> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/chung-minh-goc-cod-90-do-va-cd-ac-bd> (referer: https://lazi.vn/edu/lists/toan-hoc?start=60)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc32e88> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc3b948> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/chung-minh-ne-vuong-goc-ab-chung-minh-fa-la-tiep-tuyen-cua-o> (referer: https://lazi.vn/edu/lists/toan-hoc?start=60)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tren-tia-doi-cua-tai-ab-lay-diem-k-sao-cho-ak-4cm-tinh-do-dai-kb> (referer: https://lazi.vn/edu/lists/toan-hoc?start=45)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd38cc8> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc3e808> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc1d2c8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/chung-minh-rang-un-1-1-2un-1> (referer: https://lazi.vn/edu/lists/toan-hoc?start=60)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/giai-phuong-trinh-x-12-5-xx-5-0> (referer: https://lazi.vn/edu/lists/toan-hoc?start=45)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd4e0c8> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc19888> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-hinh-thang-abcd-co-canh-ben-ad-a-khoang-cach-tu-trung-diem-e-cua-bc-den-ad-bang-h-tinh-dien-tich> (referer: https://lazi.vn/edu/lists/toan-hoc?start=60)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc4dd88> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tinh-gia-tri-cua-bieu-thuc-a-39> (referer: https://lazi.vn/edu/lists/toan-hoc?start=60)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tim-gia-tri-nho-nhat-cua-bieu-thuc-p-11> (referer: https://lazi.vn/edu/lists/toan-hoc?start=60)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0df36bd88> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tinh-so-do-goc-hab-chung-minh-tam-giac-ahi-tam-giac-adi> (referer: https://lazi.vn/edu/lists/toan-hoc?start=60)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-hinh-thang-abcd-co-e-la-trung-diem-cua-ad-tu-e-ke-duong-thang-song-song-voi-ab-cat-bc-tai-f-biet> (referer: https://lazi.vn/edu/lists/toan-hoc?start=45)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/lists/toan-hoc?start=90> (referer: https://lazi.vn/edu/lists/toan-hoc?start=75)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc97e08> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0deda4dc8> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd3f408> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/chung-minh-rang-10n-1-chia-het-cho-9-voi-moi-so-tu-nhien-n> (referer: https://lazi.vn/edu/lists/toan-hoc?start=60)
+CRITICAL:twisted:Unhandled Error
+Traceback (most recent call last):
+Failure: twisted.internet.error.ConnectionDone: Connection was closed cleanly.
+
+CRITICAL:twisted:Unhandled Error
+Traceback (most recent call last):
+Failure: twisted.internet.error.ConnectionDone: Connection was closed cleanly.
+
+CRITICAL:twisted:Unhandled Error
+Traceback (most recent call last):
+Failure: twisted.internet.error.ConnectionDone: Connection was closed cleanly.
+
+CRITICAL:twisted:Unhandled Error
+Traceback (most recent call last):
+Failure: twisted.internet.error.ConnectionDone: Connection was closed cleanly.
+
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc32ac8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/giai-va-bien-luan-he-phuong-trinh-theo-tham-so-m-1> (referer: https://lazi.vn/edu/lists/toan-hoc?start=75)
+INFO:scrapy.extensions.logstats:Crawled 81 pages (at 44 pages/min), scraped 0 items (at 0 items/min)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc5dcc8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/giai-he-phuong-trinh-y-2-x2-1-x-22-va-y-3-x-32-x-32> (referer: https://lazi.vn/edu/lists/toan-hoc?start=75)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc93b08> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/so-hoc-sinh-kha-gioi-cua-khoi-7-ti-le-voi-3-2-biet-rang-so-hoc-sinh-gioi-it-hon-so-hoc-sinh-kha> (referer: https://lazi.vn/edu/lists/toan-hoc?start=75)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc5dcc8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/gia-tri-bieu-thuc-f-2-bang-bao-nhieu> (referer: https://lazi.vn/edu/lists/toan-hoc?start=75)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc61f88> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/thuc-hien-cac-phep-tinh-sau-13> (referer: https://lazi.vn/edu/lists/toan-hoc?start=75)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc639c8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tinh-tong-13-23-33-n3> (referer: https://lazi.vn/edu/lists/toan-hoc?start=75)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddcc7048> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-co-ab-ac-goi-d-la-trung-diem-cua-bc-chung-minh-tam-giac-abd-tam-giac-acd-1> (referer: https://lazi.vn/edu/lists/toan-hoc?start=75)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0dedefdc8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/giai-he-phuong-trinh-3y-y2-2-x2-va-3x-x2-2-y2> (referer: https://lazi.vn/edu/lists/toan-hoc?start=75)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd59708> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/giai-phuong-trinh-x2-5x-4-22x-4> (referer: https://lazi.vn/edu/lists/toan-hoc?start=75)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddbf9e08> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/nguoi-ta-trong-mia-tren-mot-khu-dat-hinh-chu-nhat-co-chieu-dai-200m-chieu-rong-bang-3-5-chieu> (referer: https://lazi.vn/edu/lists/toan-hoc?start=75)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc5d708> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tim-m-phuong-trinh-co-2-nghiem-phan-biet-tinh-nghiem-theo-m> (referer: https://lazi.vn/edu/lists/toan-hoc?start=75)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/rut-gon-bieu-thuc-p-tim-x-de-p-3-2-tim-gia-tri-nho-nhat-cua-p> (referer: https://lazi.vn/edu/lists/toan-hoc?start=75)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc93a88> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/chung-minh-cac-bat-dang-thuc-sau-21> (referer: https://lazi.vn/edu/lists/toan-hoc?start=75)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0dc83d848> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/giai-cac-phuong-trinh-sau-107> (referer: https://lazi.vn/edu/lists/toan-hoc?start=75)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/lists/toan-hoc?start=105> (referer: https://lazi.vn/edu/lists/toan-hoc?start=90)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddcf3148> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddb668c8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/giai-phuong-trinh-luong-giac-cos2x-cosx-sinx-0> (referer: https://lazi.vn/edu/lists/toan-hoc?start=90)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd52dc8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tim-da-thuc-a-1> (referer: https://lazi.vn/edu/lists/toan-hoc?start=90)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd38f08> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/chung-minh-tam-giac-abc-vuong-tai-a-tinh-do-dai-canh-ac-theo-r> (referer: https://lazi.vn/edu/lists/toan-hoc?start=90)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd3f5c8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tinh-goc-oho-chung-minh-oh-la-tia-phan-giac-cua-goc-aob> (referer: https://lazi.vn/edu/lists/toan-hoc?start=90)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc1a088> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/rut-gon-bieu-thuc-atim-cac-gia-tri-nguyen-cua-x-de-bieu-thuc-a-nhan-gia-tri-nguyen> (referer: https://lazi.vn/edu/lists/toan-hoc?start=90)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0dedcb708> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-tam-giac-mnp-co-mn-16cm-ve-cac-duong-trung-tuyen-mh-va-nk-cua-tam-giac-mnp-tinh-hk> (referer: https://lazi.vn/edu/lists/toan-hoc?start=90)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/giai-he-phuong-trinh-sau-33> (referer: https://lazi.vn/edu/lists/toan-hoc?start=90)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0dc7d7388> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/chung-minh-rang-bmne-la-hinh-binh-hanh-chung-minh-rang-mn-la-duong-trung-truc-cua-ah> (referer: https://lazi.vn/edu/lists/toan-hoc?start=90)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/lan-lay-mot-so-chia-cho-9-du-5-hoi-lan-lay-so-do-chia-3-du-may> (referer: https://lazi.vn/edu/lists/toan-hoc?start=75)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc162c8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/diem-c-la-trung-diem-cua-ab-co-do-dai-64-cm-tren-tia-ca-lay-d-sao-cho-cd-15cm-hay-tim-do-dai-bd-va-da> (referer: https://lazi.vn/edu/lists/toan-hoc?start=90)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-can-tai-a-lay-m-thuoc-canh-ac-n-thuoc-canh-ab-sao-cho-am-an-goi-d-la-giao-diem> (referer: https://lazi.vn/edu/lists/toan-hoc?start=90)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0dc7debc8> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddbd9ec8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-hinh-chop-sabcd-co-day-la-hinh-binh-hanh-tam-o-goi-m-n-la-trung-diem-ad-cd-i-la-diem-tren-so> (referer: https://lazi.vn/edu/lists/toan-hoc?start=90)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/trung-binh-cong-cua-4-so-le-lien-tiep-la-64-hay-tim-4-so-do> (referer: https://lazi.vn/edu/lists/toan-hoc?start=90)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc3e108> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0dc799208> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0dee0ad48> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc7ae88> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tim-toa-do-tam-cua-duong-tron-noi-tiep-tam-giac-abc> (referer: https://lazi.vn/edu/lists/toan-hoc?start=90)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc35d08> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/chung-minh-tam-giac-abd-tam-giac-ebd-chung-minh-rang-bc-bf> (referer: https://lazi.vn/edu/lists/toan-hoc?start=90)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd3f088> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-nua-duong-trong-tam-o-duong-kinh-mn-5cm-tren-nua-duong-tron-lay-diem-p-sao-cho-mp-3cm> (referer: https://lazi.vn/edu/lists/toan-hoc?start=90)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc42508> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/lists/toan-hoc?start=120> (referer: https://lazi.vn/edu/lists/toan-hoc?start=105)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/lap-phuong-trinh-tham-so-phuong-trinh-tong-quat-cua-duong-thang-d-trong-cac-truong-hop-sau> (referer: https://lazi.vn/edu/lists/toan-hoc?start=105)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc72448> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-abc-biet-bc-52cm-ab-20cm-ac-48cm-chung-minh-abc-vuong-o-a> (referer: https://lazi.vn/edu/lists/toan-hoc?start=105)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddcc53c8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tim-m-de-phuong-trinh-p-m-co-nghiem> (referer: https://lazi.vn/edu/lists/toan-hoc?start=105)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/trong-cac-duong-thang-sau-day-nhung-cap-duong-thang-nao-song-song-voi-nhau> (referer: https://lazi.vn/edu/lists/toan-hoc?start=105)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tim-gtnn-cua-bieu-thuc-1> (referer: https://lazi.vn/edu/lists/toan-hoc?start=105)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc42a88> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/truc-can-thuc-o-mau-7> (referer: https://lazi.vn/edu/lists/toan-hoc?start=105)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0dc7a3408> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc1cb48> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-a-30-31-32-33-34-360-chung-minh-a-1-chia-het-cho-12> (referer: https://lazi.vn/edu/lists/toan-hoc?start=105)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0deda4e88> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd26cc8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tren-tia-ox-lay-hai-diem-a-va-b-sao-cho-oa-3cm-ob-5cm-tinh-do-dai-doan-thang-ab> (referer: https://lazi.vn/edu/lists/toan-hoc?start=105)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd52ec8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/rut-gon-bieu-thuc-m-tim-gtln-cua-m> (referer: https://lazi.vn/edu/lists/toan-hoc?start=105)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc35108> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/rut-gon-bieu-thuc-a-tim-gia-tri-nguyen-cua-x-de-bieu-thuc-a-nhan-gia-tri-nguyen> (referer: https://lazi.vn/edu/lists/toan-hoc?start=105)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0deda41c8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/giai-phuong-trinh-3x-5-7-3x-9x2-36x-38> (referer: https://lazi.vn/edu/lists/toan-hoc?start=105)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc17cc8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-vuong-tai-a-abac-duong-cao-ah-ve-h-vuong-ahik-goc-h-nam-nam-giua-goc-o> (referer: https://lazi.vn/edu/lists/toan-hoc?start=105)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc1a908> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/chung-minh-tan2x-sin2x-tan2x-sin2x> (referer: https://lazi.vn/edu/lists/toan-hoc?start=105)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0dc7d74c8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tren-tia-ox-lay-hai-diem-a-va-b-sao-cho-ab-3cm-ob-5cm-tinh-do-dai-doan-thang-ab> (referer: https://lazi.vn/edu/lists/toan-hoc?start=105)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd52dc8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tim-nghiem-nguyen-x2-2x-11-y2> (referer: https://lazi.vn/edu/lists/toan-hoc?start=105)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc63a08> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tim-moi-so-tu-nhien-n-sao-cho-10n-1-chia-het-cho-81> (referer: https://lazi.vn/edu/lists/toan-hoc?start=60)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc63a48> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/lists/toan-hoc?start=135> (referer: https://lazi.vn/edu/lists/toan-hoc?start=120)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/hoc-sinh-khoi-6-cua-mot-truong-vao-khoang-230-den-270-em-khi-xep-hang-12-hang15-hang-20> (referer: https://lazi.vn/edu/lists/toan-hoc?start=120)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddb6ba88> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/so-tu-nhien-a-khi-chia-cho-17-du-11-chia-cho-23-du-18-chia-cho-11-du-3-hoi-a-chia-cho-4301-du-bao-nhieu> (referer: https://lazi.vn/edu/lists/toan-hoc?start=120)
+INFO:scrapy.extensions.logstats:Crawled 131 pages (at 50 pages/min), scraped 0 items (at 0 items/min)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddcd65c8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tren-tia-am-lay-hai-diem-q-h-sao-cho-aq-2cm-ah-8cm-tinh-qh> (referer: https://lazi.vn/edu/lists/toan-hoc?start=120)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd45708> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/doan-thang-ab-36cm-duoc-chia-thanh-4-doan-thang-co-do-dai-khong-bang-nhau-la-cac-doan-thang> (referer: https://lazi.vn/edu/lists/toan-hoc?start=120)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc24fc8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-vuong-tai-a-ab-ac-duong-cao-ah-ve-hinh-vuong-ahik-goc-h-nam-nam-giua-goc-o> (referer: https://lazi.vn/edu/lists/toan-hoc?start=120)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0dc7ca9c8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-hinh-chop-sabcd-la-hinh-binh-hanh-tam-o-goi-g-g-la-trong-tam-tam-giac-sad-va-sbc-xac-dinh-giao> (referer: https://lazi.vn/edu/lists/toan-hoc?start=120)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc20688> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/bai-tap-co-so-ki-thuat-dien> (referer: https://lazi.vn/edu/lists/toan-hoc?start=120)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddcd0888> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-3-so-a-b-c-12-va-a2-b2-c2-48-tinh-gia-tri-cua-bieu-thuc-a-a-32017-b-42018-c-52019> (referer: https://lazi.vn/edu/lists/toan-hoc?start=120)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd50588> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/rut-gon-cac-bieu-thuc-sau-109> (referer: https://lazi.vn/edu/lists/toan-hoc?start=120)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddbe4c48> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/chung-minh-cac-bat-dang-thuc-sau-20> (referer: https://lazi.vn/edu/lists/toan-hoc?start=120)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc62708> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/chung-minh-duong-tron-ngoai-tiep-tam-giac-hmn-luon-di-qua-diem-co-dinh> (referer: https://lazi.vn/edu/lists/toan-hoc?start=120)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc223c8> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-a-32010-goi-x-la-tong-cac-chu-so-cua-a-y-la-tong-cac-chu-so-cua-x-va-goi-z-la-tong-cac-chu-so> (referer: https://lazi.vn/edu/lists/toan-hoc?start=120)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddce1408> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/chung-minh-tu-giac-cehd-noi-tiep-chung-minh-4-diem-b-c-e-f-cung-nam-tren-mot-duong-tron-1> (referer: https://lazi.vn/edu/lists/toan-hoc?start=120)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0e7145948> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/ti-so-cua-35-va-654-la> (referer: https://lazi.vn/edu/lists/toan-hoc?start=120)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc22308> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/giai-phuong-trinh-2sin12x-sinx> (referer: https://lazi.vn/edu/lists/toan-hoc?start=60)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc5c048> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/lists/toan-hoc?start=150> (referer: https://lazi.vn/edu/lists/toan-hoc?start=135)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/chung-minh-4-diem-a-b-o-c-cung-thuoc-mot-duong-tron> (referer: https://lazi.vn/edu/lists/toan-hoc?start=120)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddbe4508> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-6-diem-a-b-c-d-e-f-chung-minh-rang-vecto-ab-dc-ac-db> (referer: https://lazi.vn/edu/lists/toan-hoc?start=135)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd49d48> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/giai-cac-phuong-trinh-sau-2x-1-5-1> (referer: https://lazi.vn/edu/lists/toan-hoc?start=135)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/biet-rang-1-goi-keo-phai-tra-9-000-dong-va-bang-2-3-so-tien-cua-1-goi-banh> (referer: https://lazi.vn/edu/lists/toan-hoc?start=135)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0dee0a888> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tim-cac-gia-tri-cua-m-de-phuong-trinh-x3-2x2-1-mx-m-0-co-3-nghiem-phan-biet-trong-do-co-2-nghiem-nho-hon-1> (referer: https://lazi.vn/edu/lists/toan-hoc?start=135)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tren-duong-cao-ah-lay-diem-e-sao-cho-h-la-trung-diem-cua-ah-biet-ah-4cm-hm-1-5cm-tinh-dien-tich-tam-giac-aed> (referer: https://lazi.vn/edu/lists/toan-hoc?start=135)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0dc7c7308> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd52108> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc97608> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tong-cac-chu-so-cua-mot-so-hai-chu-so-bang-6-neu-them-vao-so-do-18-don-vi> (referer: https://lazi.vn/edu/lists/toan-hoc?start=135)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd45708> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/hai-tiep-tuyen-tai-a-b-cua-duong-tron-o-r-cat-nhau-tai-m-tinh-so-do-cua-goc-o-tam-aob> (referer: https://lazi.vn/edu/lists/toan-hoc?start=135)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd59688> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/neu-lan-co-them-mot-nguoi-em-nua-ma-me-van-de-danh-nhu-truoc-thi-so-tien-tieu-trung-binh-hang-thang> (referer: https://lazi.vn/edu/lists/toan-hoc?start=135)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/chung-minh-ab-la-tiep-tuyen-duong-tron-duong-kinh-cd> (referer: https://lazi.vn/edu/lists/toan-hoc?start=135)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddb75a08> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc4-1-b1-7-c-1-0-viet-phuong-trinh-tong-quat-cua-duong-cao-ah-duong-thang-bc> (referer: https://lazi.vn/edu/lists/toan-hoc?start=135)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd52148> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-co-cac-goc-nho-hon-90-do-ab-ac-tia-phan-giac-cua-goc-a-cat-canh-bc-tai-d> (referer: https://lazi.vn/edu/lists/toan-hoc?start=135)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddd34e08> to DB successfully
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc97f88> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-tam-giac-mnp-vuong-tai-m-tia-phan-giac-mnp-cat-mp-tai-o-tren-canh-np-lay-diem-h-sao-cho-mn-nh> (referer: https://lazi.vn/edu/lists/toan-hoc?start=135)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc34448> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-duong-tron-o-r-duong-kinh-ab-co-dinh-qua-a-ke-tiep-tuyen-ax-voi-duong-tron-tren-ax-lay-diem-p-sao-cho-ap-r> (referer: https://lazi.vn/edu/lists/toan-hoc?start=135)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc72b08> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/doan-thang-ab-co-do-dai-28cm-duoc-chia-thanh-ba-doan-thang-khong-bang-nhau-theo-thu-tu-ac-cd-va-db> (referer: https://lazi.vn/edu/lists/toan-hoc?start=135)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddc8e548> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/lists/toan-hoc?start=165> (referer: https://lazi.vn/edu/lists/toan-hoc?start=150)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/cho-doan-thang-ab-6-cm-tren-tia-doi-cua-tia-ab-lay-diem-c-biet-e-la-trung-diem-cua-doan-thang-ca> (referer: https://lazi.vn/edu/lists/toan-hoc?start=135)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddbe5a08> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/tinh-40-162-5-5> (referer: https://lazi.vn/edu/lists/toan-hoc?start=150)
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0ddcd2248> to DB successfully
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://lazi.vn/edu/exercise/giai-phuong-trinh-2cos2x-3sinxcosx-sin2x-0> (referer: https://lazi.vn/edu/lists/toan-hoc?start=150)
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/giai-cac-he-phuong-trinh-sau-27> (failed 1 times): 503 Service Unavailable
+DEBUG:root:Insert data <pymongo.results.InsertOneResult object at 0x7ff0dc7dc308> to DB successfully
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/viet-phuong-trinh-cac-canh-cua-tam-giac-abc-biet-a-1-2-b2-4-c1-0> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-can-dinh-a-lay-tren-canh-bc-hai-diem-m-va-h-theo-thu-tu-b-m-h-c-sao-cho-bm-ch> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/cho-a-b-c-1-chung-minh-2-9-a3-b3-c3-3abc-1-2> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/phan-tich-da-thuc-thanh-nhan-tu-5xx-1-3xx-1> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-can-tai-a-lay-diem-h-thuoc-canh-ac-diem-k-thuoc-canh-bc-sao-cho-ah-ak> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/tim-he-so-x7-trong-khai-trien-nhi-thuc-x2-2-x8> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-co-ab-ac-tia-phan-giac-cua-goc-a-cat-bc-tai-m-chung-minh-tam-giac-amb-tam-giac-amc> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-ab-ac-chung-minh-tam-giac-aem-tam-giac-bec> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-co-cac-goc-nho-hon-90-do-ab-be-hon-ac-tia-phan-giac-cua-goc-a-cat-canh-bc-tai-d> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/cho-a-b-c-1-chung-minh-bat-dang-thuc> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/cho-x-y-0-va-x2-y2-1-tim-min-max-cua-p> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-duong-tron-co-duong-kinh-bc-cat-ab-ac-lan-luot-tai-e-va-d-bd-va-ce-cat-nhau-tai-h> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/tong-cua-ba-so-bang-270-tong-cua-so-thu-nhat-va-thu-hai-la-121-so-thu-hai-va-so-thu-ba-la-185-tim-ba-so-do> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/thuc-hien-phep-tinh-113> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/lists/toan-hoc?start=180> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/chung-minh-tam-giac-abm-vuong-tinh-do-dai-mh-chung-minh-mn-la-tiep-tuyen-cua-duong-tron-o> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/giai-phuong-trinh-nghiem-nguyen-x2-2x-11-y2-7x2-xy-y2-39x-y> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/cho-a-3b-4-a-3b-4-0-chung-minh-a-3-b-4> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/tim-so-du-khi-chia-22011-cho-31> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/chung-minh-ac-bd2-ad-bc2-a2-b2c2-d2> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/chung-minh-tu-giac-debf-la-hinh-binh-hanh> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/rut-gon-cac-bieu-thuc-sau-108> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/chung-minh-bd-vuong-goc-ac-va-ab2-adac-chung-minh-h-la-trung-diem-cua-be> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/cho-hinh-thang-abcd-vuong-tai-a-va-d-ab-4a-cd-2a-ad-3a-n-la-diem-thuoc-ad-sao-cho-na-2a-tich-vt-nb> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/viet-phuong-trinh-duong-thang-d3-di-qua-diem-a-2-1-va-song-song-voi-duong-thang-d1> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/chung-minh-cac-bat-dang-thuc-sau-19> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/chung-minh-s-chia-het-cho-126-va-65> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/tinh-tong-s-6> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/tim-giao-diem-i-cua-mn-voi-sac-tim-giao-tuyen-cua-hai-mat-phang-mnc-va-sac> (failed 1 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/thuc-hien-phep-tinh-113> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/lists/toan-hoc?start=180> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/chung-minh-tam-giac-abm-vuong-tinh-do-dai-mh-chung-minh-mn-la-tiep-tuyen-cua-duong-tron-o> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/giai-phuong-trinh-nghiem-nguyen-x2-2x-11-y2-7x2-xy-y2-39x-y> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/cho-a-3b-4-a-3b-4-0-chung-minh-a-3-b-4> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/tim-so-du-khi-chia-22011-cho-31> (failed 2 times): 503 Service Unavailable
+INFO:scrapy.extensions.logstats:Crawled 164 pages (at 33 pages/min), scraped 0 items (at 0 items/min)
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/chung-minh-ac-bd2-ad-bc2-a2-b2c2-d2> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/chung-minh-tu-giac-debf-la-hinh-binh-hanh> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/rut-gon-cac-bieu-thuc-sau-108> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/cho-hinh-thang-abcd-vuong-tai-a-va-d-ab-4a-cd-2a-ad-3a-n-la-diem-thuoc-ad-sao-cho-na-2a-tich-vt-nb> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/chung-minh-bd-vuong-goc-ac-va-ab2-adac-chung-minh-h-la-trung-diem-cua-be> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/viet-phuong-trinh-duong-thang-d3-di-qua-diem-a-2-1-va-song-song-voi-duong-thang-d1> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/chung-minh-cac-bat-dang-thuc-sau-19> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/chung-minh-s-chia-het-cho-126-va-65> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/tinh-tong-s-6> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/tim-giao-diem-i-cua-mn-voi-sac-tim-giao-tuyen-cua-hai-mat-phang-mnc-va-sac> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/tong-cua-ba-so-bang-270-tong-cua-so-thu-nhat-va-thu-hai-la-121-so-thu-hai-va-so-thu-ba-la-185-tim-ba-so-do> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-duong-tron-co-duong-kinh-bc-cat-ab-ac-lan-luot-tai-e-va-d-bd-va-ce-cat-nhau-tai-h> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/cho-x-y-0-va-x2-y2-1-tim-min-max-cua-p> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/cho-a-b-c-1-chung-minh-bat-dang-thuc> (failed 2 times): 503 Service Unavailable
+CRITICAL:twisted:Unhandled Error
+Traceback (most recent call last):
+Failure: twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion.
+
+CRITICAL:twisted:Unhandled Error
+Traceback (most recent call last):
+Failure: twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion.
+
+CRITICAL:twisted:Unhandled Error
+Traceback (most recent call last):
+Failure: twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion.
+
+CRITICAL:twisted:Unhandled Error
+Traceback (most recent call last):
+Failure: twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion.
+
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-co-cac-goc-nho-hon-90-do-ab-be-hon-ac-tia-phan-giac-cua-goc-a-cat-canh-bc-tai-d> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-ab-ac-chung-minh-tam-giac-aem-tam-giac-bec> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-co-ab-ac-tia-phan-giac-cua-goc-a-cat-bc-tai-m-chung-minh-tam-giac-amb-tam-giac-amc> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/tim-he-so-x7-trong-khai-trien-nhi-thuc-x2-2-x8> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-can-tai-a-lay-diem-h-thuoc-canh-ac-diem-k-thuoc-canh-bc-sao-cho-ah-ak> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/phan-tich-da-thuc-thanh-nhan-tu-5xx-1-3xx-1> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/cho-a-b-c-1-chung-minh-2-9-a3-b3-c3-3abc-1-2> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-can-dinh-a-lay-tren-canh-bc-hai-diem-m-va-h-theo-thu-tu-b-m-h-c-sao-cho-bm-ch> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/viet-phuong-trinh-cac-canh-cua-tam-giac-abc-biet-a-1-2-b2-4-c1-0> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Retrying <GET https://lazi.vn/edu/exercise/giai-cac-he-phuong-trinh-sau-27> (failed 2 times): 503 Service Unavailable
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/tim-giao-diem-i-cua-mn-voi-sac-tim-giao-tuyen-cua-hai-mat-phang-mnc-va-sac> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/tim-giao-diem-i-cua-mn-voi-sac-tim-giao-tuyen-cua-hai-mat-phang-mnc-va-sac> (referer: https://lazi.vn/edu/lists/toan-hoc?start=165)
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/tinh-tong-s-6> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/tinh-tong-s-6> (referer: https://lazi.vn/edu/lists/toan-hoc?start=165)
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/tong-cua-ba-so-bang-270-tong-cua-so-thu-nhat-va-thu-hai-la-121-so-thu-hai-va-so-thu-ba-la-185-tim-ba-so-do> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/tong-cua-ba-so-bang-270-tong-cua-so-thu-nhat-va-thu-hai-la-121-so-thu-hai-va-so-thu-ba-la-185-tim-ba-so-do> (referer: https://lazi.vn/edu/lists/toan-hoc?start=60)
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-duong-tron-co-duong-kinh-bc-cat-ab-ac-lan-luot-tai-e-va-d-bd-va-ce-cat-nhau-tai-h> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-duong-tron-co-duong-kinh-bc-cat-ab-ac-lan-luot-tai-e-va-d-bd-va-ce-cat-nhau-tai-h> (referer: https://lazi.vn/edu/lists/toan-hoc?start=150)
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/tim-giao-diem-i-cua-mn-voi-sac-tim-giao-tuyen-cua-hai-mat-phang-mnc-va-sac>: HTTP status code is not handled or not allowed
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/tinh-tong-s-6>: HTTP status code is not handled or not allowed
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/tong-cua-ba-so-bang-270-tong-cua-so-thu-nhat-va-thu-hai-la-121-so-thu-hai-va-so-thu-ba-la-185-tim-ba-so-do>: HTTP status code is not handled or not allowed
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/cho-tam-giac-abc-duong-tron-co-duong-kinh-bc-cat-ab-ac-lan-luot-tai-e-va-d-bd-va-ce-cat-nhau-tai-h>: HTTP status code is not handled or not allowed
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/cho-x-y-0-va-x2-y2-1-tim-min-max-cua-p> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/cho-x-y-0-va-x2-y2-1-tim-min-max-cua-p> (referer: https://lazi.vn/edu/lists/toan-hoc?start=150)
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/cho-a-b-c-1-chung-minh-bat-dang-thuc> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/cho-a-b-c-1-chung-minh-bat-dang-thuc> (referer: https://lazi.vn/edu/lists/toan-hoc?start=150)
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/cho-x-y-0-va-x2-y2-1-tim-min-max-cua-p>: HTTP status code is not handled or not allowed
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/cho-a-b-c-1-chung-minh-bat-dang-thuc>: HTTP status code is not handled or not allowed
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-co-cac-goc-nho-hon-90-do-ab-be-hon-ac-tia-phan-giac-cua-goc-a-cat-canh-bc-tai-d> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-co-cac-goc-nho-hon-90-do-ab-be-hon-ac-tia-phan-giac-cua-goc-a-cat-canh-bc-tai-d> (referer: https://lazi.vn/edu/lists/toan-hoc?start=150)
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/cho-tam-giac-abc-co-cac-goc-nho-hon-90-do-ab-be-hon-ac-tia-phan-giac-cua-goc-a-cat-canh-bc-tai-d>: HTTP status code is not handled or not allowed
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-ab-ac-chung-minh-tam-giac-aem-tam-giac-bec> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-ab-ac-chung-minh-tam-giac-aem-tam-giac-bec> (referer: https://lazi.vn/edu/lists/toan-hoc?start=150)
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/cho-tam-giac-abc-ab-ac-chung-minh-tam-giac-aem-tam-giac-bec>: HTTP status code is not handled or not allowed
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/tim-he-so-x7-trong-khai-trien-nhi-thuc-x2-2-x8> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/tim-he-so-x7-trong-khai-trien-nhi-thuc-x2-2-x8> (referer: https://lazi.vn/edu/lists/toan-hoc?start=150)
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/tim-he-so-x7-trong-khai-trien-nhi-thuc-x2-2-x8>: HTTP status code is not handled or not allowed
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-co-ab-ac-tia-phan-giac-cua-goc-a-cat-bc-tai-m-chung-minh-tam-giac-amb-tam-giac-amc> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-co-ab-ac-tia-phan-giac-cua-goc-a-cat-bc-tai-m-chung-minh-tam-giac-amb-tam-giac-amc> (referer: https://lazi.vn/edu/lists/toan-hoc?start=150)
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/cho-tam-giac-abc-co-ab-ac-tia-phan-giac-cua-goc-a-cat-bc-tai-m-chung-minh-tam-giac-amb-tam-giac-amc>: HTTP status code is not handled or not allowed
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-can-tai-a-lay-diem-h-thuoc-canh-ac-diem-k-thuoc-canh-bc-sao-cho-ah-ak> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-can-tai-a-lay-diem-h-thuoc-canh-ac-diem-k-thuoc-canh-bc-sao-cho-ah-ak> (referer: https://lazi.vn/edu/lists/toan-hoc?start=150)
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/cho-tam-giac-abc-can-tai-a-lay-diem-h-thuoc-canh-ac-diem-k-thuoc-canh-bc-sao-cho-ah-ak>: HTTP status code is not handled or not allowed
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/phan-tich-da-thuc-thanh-nhan-tu-5xx-1-3xx-1> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/phan-tich-da-thuc-thanh-nhan-tu-5xx-1-3xx-1> (referer: https://lazi.vn/edu/lists/toan-hoc?start=150)
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/phan-tich-da-thuc-thanh-nhan-tu-5xx-1-3xx-1>: HTTP status code is not handled or not allowed
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/cho-a-b-c-1-chung-minh-2-9-a3-b3-c3-3abc-1-2> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/cho-a-b-c-1-chung-minh-2-9-a3-b3-c3-3abc-1-2> (referer: https://lazi.vn/edu/lists/toan-hoc?start=150)
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/cho-a-b-c-1-chung-minh-2-9-a3-b3-c3-3abc-1-2>: HTTP status code is not handled or not allowed
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-can-dinh-a-lay-tren-canh-bc-hai-diem-m-va-h-theo-thu-tu-b-m-h-c-sao-cho-bm-ch> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/cho-tam-giac-abc-can-dinh-a-lay-tren-canh-bc-hai-diem-m-va-h-theo-thu-tu-b-m-h-c-sao-cho-bm-ch> (referer: https://lazi.vn/edu/lists/toan-hoc?start=150)
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/cho-tam-giac-abc-can-dinh-a-lay-tren-canh-bc-hai-diem-m-va-h-theo-thu-tu-b-m-h-c-sao-cho-bm-ch>: HTTP status code is not handled or not allowed
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/viet-phuong-trinh-cac-canh-cua-tam-giac-abc-biet-a-1-2-b2-4-c1-0> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/viet-phuong-trinh-cac-canh-cua-tam-giac-abc-biet-a-1-2-b2-4-c1-0> (referer: https://lazi.vn/edu/lists/toan-hoc?start=150)
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/viet-phuong-trinh-cac-canh-cua-tam-giac-abc-biet-a-1-2-b2-4-c1-0>: HTTP status code is not handled or not allowed
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/giai-cac-he-phuong-trinh-sau-27> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/giai-cac-he-phuong-trinh-sau-27> (referer: https://lazi.vn/edu/lists/toan-hoc?start=150)
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/giai-cac-he-phuong-trinh-sau-27>: HTTP status code is not handled or not allowed
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/chung-minh-s-chia-het-cho-126-va-65> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/chung-minh-s-chia-het-cho-126-va-65> (referer: https://lazi.vn/edu/lists/toan-hoc?start=165)
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/chung-minh-s-chia-het-cho-126-va-65>: HTTP status code is not handled or not allowed
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/chung-minh-cac-bat-dang-thuc-sau-19> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/chung-minh-cac-bat-dang-thuc-sau-19> (referer: https://lazi.vn/edu/lists/toan-hoc?start=165)
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/chung-minh-cac-bat-dang-thuc-sau-19>: HTTP status code is not handled or not allowed
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/viet-phuong-trinh-duong-thang-d3-di-qua-diem-a-2-1-va-song-song-voi-duong-thang-d1> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/viet-phuong-trinh-duong-thang-d3-di-qua-diem-a-2-1-va-song-song-voi-duong-thang-d1> (referer: https://lazi.vn/edu/lists/toan-hoc?start=165)
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/viet-phuong-trinh-duong-thang-d3-di-qua-diem-a-2-1-va-song-song-voi-duong-thang-d1>: HTTP status code is not handled or not allowed
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/chung-minh-bd-vuong-goc-ac-va-ab2-adac-chung-minh-h-la-trung-diem-cua-be> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/chung-minh-bd-vuong-goc-ac-va-ab2-adac-chung-minh-h-la-trung-diem-cua-be> (referer: https://lazi.vn/edu/lists/toan-hoc?start=165)
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/chung-minh-bd-vuong-goc-ac-va-ab2-adac-chung-minh-h-la-trung-diem-cua-be>: HTTP status code is not handled or not allowed
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/cho-hinh-thang-abcd-vuong-tai-a-va-d-ab-4a-cd-2a-ad-3a-n-la-diem-thuoc-ad-sao-cho-na-2a-tich-vt-nb> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/cho-hinh-thang-abcd-vuong-tai-a-va-d-ab-4a-cd-2a-ad-3a-n-la-diem-thuoc-ad-sao-cho-na-2a-tich-vt-nb> (referer: https://lazi.vn/edu/lists/toan-hoc?start=165)
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/cho-hinh-thang-abcd-vuong-tai-a-va-d-ab-4a-cd-2a-ad-3a-n-la-diem-thuoc-ad-sao-cho-na-2a-tich-vt-nb>: HTTP status code is not handled or not allowed
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/rut-gon-cac-bieu-thuc-sau-108> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/rut-gon-cac-bieu-thuc-sau-108> (referer: https://lazi.vn/edu/lists/toan-hoc?start=165)
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/chung-minh-tu-giac-debf-la-hinh-binh-hanh> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/chung-minh-tu-giac-debf-la-hinh-binh-hanh> (referer: https://lazi.vn/edu/lists/toan-hoc?start=165)
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/rut-gon-cac-bieu-thuc-sau-108>: HTTP status code is not handled or not allowed
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/chung-minh-tu-giac-debf-la-hinh-binh-hanh>: HTTP status code is not handled or not allowed
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/chung-minh-ac-bd2-ad-bc2-a2-b2c2-d2> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/chung-minh-ac-bd2-ad-bc2-a2-b2c2-d2> (referer: https://lazi.vn/edu/lists/toan-hoc?start=165)
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/chung-minh-ac-bd2-ad-bc2-a2-b2c2-d2>: HTTP status code is not handled or not allowed
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/tim-so-du-khi-chia-22011-cho-31> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/tim-so-du-khi-chia-22011-cho-31> (referer: https://lazi.vn/edu/lists/toan-hoc?start=165)
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/tim-so-du-khi-chia-22011-cho-31>: HTTP status code is not handled or not allowed
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/cho-a-3b-4-a-3b-4-0-chung-minh-a-3-b-4> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/cho-a-3b-4-a-3b-4-0-chung-minh-a-3-b-4> (referer: https://lazi.vn/edu/lists/toan-hoc?start=165)
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/cho-a-3b-4-a-3b-4-0-chung-minh-a-3-b-4>: HTTP status code is not handled or not allowed
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/giai-phuong-trinh-nghiem-nguyen-x2-2x-11-y2-7x2-xy-y2-39x-y> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/giai-phuong-trinh-nghiem-nguyen-x2-2x-11-y2-7x2-xy-y2-39x-y> (referer: https://lazi.vn/edu/lists/toan-hoc?start=165)
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/giai-phuong-trinh-nghiem-nguyen-x2-2x-11-y2-7x2-xy-y2-39x-y>: HTTP status code is not handled or not allowed
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/chung-minh-tam-giac-abm-vuong-tinh-do-dai-mh-chung-minh-mn-la-tiep-tuyen-cua-duong-tron-o> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/chung-minh-tam-giac-abm-vuong-tinh-do-dai-mh-chung-minh-mn-la-tiep-tuyen-cua-duong-tron-o> (referer: https://lazi.vn/edu/lists/toan-hoc?start=165)
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/chung-minh-tam-giac-abm-vuong-tinh-do-dai-mh-chung-minh-mn-la-tiep-tuyen-cua-duong-tron-o>: HTTP status code is not handled or not allowed
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/lists/toan-hoc?start=180> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/lists/toan-hoc?start=180> (referer: https://lazi.vn/edu/lists/toan-hoc?start=165)
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/lists/toan-hoc?start=180>: HTTP status code is not handled or not allowed
+DEBUG:scrapy.downloadermiddlewares.retry:Gave up retrying <GET https://lazi.vn/edu/exercise/thuc-hien-phep-tinh-113> (failed 3 times): 503 Service Unavailable
+DEBUG:scrapy.core.engine:Crawled (503) <GET https://lazi.vn/edu/exercise/thuc-hien-phep-tinh-113> (referer: https://lazi.vn/edu/lists/toan-hoc?start=165)
+INFO:scrapy.spidermiddlewares.httperror:Ignoring response <503 https://lazi.vn/edu/exercise/thuc-hien-phep-tinh-113>: HTTP status code is not handled or not allowed
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'downloader/request_bytes': 191599,
+ 'downloader/request_count': 254,
+ 'downloader/request_method_count/GET': 254,
+ 'downloader/response_bytes': 3844718,
+ 'downloader/response_count': 254,
+ 'downloader/response_status_count/200': 164,
+ 'downloader/response_status_count/503': 90,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 1, 2, 9, 38, 9, 211084),
+ 'httperror/response_ignored_count': 30,
+ 'httperror/response_ignored_status_count/503': 30,
+ 'log_count/CRITICAL': 8,
+ 'log_count/DEBUG': 436,
+ 'log_count/INFO': 41,
+ 'memusage/max': 117571584,
+ 'memusage/startup': 54865920,
+ 'request_depth_max': 12,
+ 'response_received_count': 194,
+ 'retry/count': 60,
+ 'retry/max_reached': 30,
+ 'retry/reason_count/503 Service Unavailable': 60,
+ 'scheduler/dequeued': 253,
+ 'scheduler/dequeued/memory': 253,
+ 'scheduler/enqueued': 253,
+ 'scheduler/enqueued/memory': 253,
+ 'start_time': datetime.datetime(2019, 1, 2, 9, 33, 36, 185023)}
+INFO:scrapy.core.engine:Spider closed (finished)
