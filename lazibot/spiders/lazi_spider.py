@@ -11,12 +11,12 @@ ROOT_URL = "https://lazi.vn/"
 class LaziSpider(scrapy.Spider):
     name = "lazi"
 
-    myclient = pymongo.MongoClient("mongodb://truongtd2:123123@localhost:27017")
+    myclient = pymongo.MongoClient("mongodb://truongtd2:123123@42.113.207.170:27017")
     db = myclient["crawl"]
     collection = db["demo"]
 
     def insert_to_db(self, data):
-        inserted_id = self.collection.insert_one(data)
+        inserted_id = self.collection.update({"title": data["title"]}, data, upsert=True)
         logging.debug('Insert data %s to DB successfully', inserted_id)
         return inserted_id
 
