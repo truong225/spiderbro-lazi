@@ -1,0 +1,4 @@
+.vscode/
+.vscode/*
+lazibot/__pycache/*
+toDB.log
