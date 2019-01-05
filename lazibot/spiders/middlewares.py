@@ -1,16 +1,32 @@
-import random
 
-listproxy=[
-	'http://139.255.92.26:53281',
-	'http://195.123.219.193:3128',
-	'http://45.235.87.65:60763',
-	'http://152.204.128.46:50830',
-	'http://1.20.98.168:37782',
-	'http://188.246.106.182:48325',
-	'http://1.20.98.168:37782',
-	'http://152.204.128.46:50830'
-]
+
+
+
 
 class ProxyMiddleware(object):
+
     def process_request(self, request, spider):
-        request.meta['proxy'] = random.choice(listproxy)
+        request.meta['proxy'] = 'http://127.0.0.1:8118'
+        spider.log('Proxy : %s' % request.meta['proxy'])
+
+
+# from stem import Signal
+# from stem.control import Controller
+
+
+# def set_new_ip():
+#     with Controller.from_port(port=9051) as controller:
+#         controller.authenticate(password='123123')
+#         controller.signal(Signal.NEWNYM)
+
+
+# class ProxyMiddleware(object):
+#     count = 0
+
+#     def process_request(self, request, spider):
+#         self.count += 1
+#         if self.count == 100:
+#             set_new_ip()
+#             self.count = 0
+#         request.meta['proxy'] = 'http://127.0.0.1:8118'
+#         spider.log('Proxy : %s' % request.meta['proxy'])

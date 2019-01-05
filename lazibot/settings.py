@@ -16,7 +16,7 @@ NEWSPIDER_MODULE = 'lazibot.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'lazibot (+http://www.yourdomain.com)'
+# USER_AGENT = 'kobayashi (+http://httpbin.org/)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -30,10 +30,10 @@ ROBOTSTXT_OBEY = True
 DOWNLOAD_DELAY = 0.25
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
-CONCURRENT_REQUESTS_PER_IP = 16
+# CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-#COOKIES_ENABLED = False
+COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
@@ -55,8 +55,19 @@ CONCURRENT_REQUESTS_PER_IP = 16
 #DOWNLOADER_MIDDLEWARES = {
 #    'lazibot.middlewares.LazibotDownloaderMiddleware': 543,
 #}
+# USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64; rv:7.0.1) Gecko/20100101 Firefox/64.0'
 DOWNLOADER_MIDDLEWARES = {
-    'scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware': 110,
+    # 'scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware': 110,
+    # 'lazibot.spiders.middlewares.ProxyMiddleware': 100
+    ## User agent
+	'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+	#need pip install scrapy_fake_useragent  (in conda)
+	'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware': 400,
+
+	## Proxy (privoxy + tor) 
+	#cf https://trevsewell.co.uk/scraping/anonymous-scraping-scrapy-tor-polipo/
+	# activate http proxy (turn on proxy)
+    'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 110,
     'lazibot.spiders.middlewares.ProxyMiddleware': 100
 }
 
@@ -74,9 +85,9 @@ DOWNLOADER_MIDDLEWARES = {
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
-AUTOTHROTTLE_ENABLED = True
-AUTOTHROTTLE_START_DELAY = 1
-AUTOTHROTTLE_MAX_DELAY = 2
+# AUTOTHROTTLE_ENABLED = True
+# AUTOTHROTTLE_START_DELAY = 1
+# AUTOTHROTTLE_MAX_DELAY = 2
 #AUTOTHROTTLE_ENABLED = True
 # The initial download delay
 #AUTOTHROTTLE_START_DELAY = 5
@@ -90,7 +101,7 @@ AUTOTHROTTLE_MAX_DELAY = 2
 
 # Enable and configure HTTP caching (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
-#HTTPCACHE_ENABLED = True
+# HTTPCACHE_ENABLED = True
 #HTTPCACHE_EXPIRATION_SECS = 0
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []

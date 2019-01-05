@@ -1,0 +1,11 @@
+Server: nginx
+Date: Thu, 03 Jan 2019 09:15:03 GMT
+Content-Type: text/html; charset=UTF-8
+Vary: Accept-Encoding
+Set-Cookie: default_pyrocms=a%3A0%3A%7B%7D; expires=Wed, 03-Jan-2018 12:15:03 GMT; Max-Age=-31525200; path=/; domain=lazi.vn; httponly
+Set-Cookie: default_pyrocms=4Rt6oQzMGInagaKuxzlT0oJnactEolNQayxCyGt%2FhnPp%2F3V3zWYAbq1YeS2nm42UNVcu08AwVv7AEZpfc8uXP%2FKZdXqXS%2FHBofrq1UZ1DOFmvdmygXuf0B6L6Zuhn3rfVP0Q8ZK4mt6IjUP%2BfXntjlQd26uIiD0IEGUqgEaslHEfLACZPq0UconumOSDatcDWgV%2BQLXFg8tBYqufcZX06u88IhQ23G%2Fb2y667ir1%2BkOO%2B6ys5mw9gpXRPaxI5HN6F0qsu2blQUx0bT%2BDqffhN6i%2F%2FI9TAV1JhReHFMD6Zq80APtXqyrVCZXQvNYPhtbVw38dpKj8SXqipO%2BDaSkcov8lODZ9hkIY670gb9JkvD%2BV1nLweL93egt9oEv6HFCVVEXXsRMyeNItTxgLLxwwEv7j%2B5itCNxsmU0ceWswGNs%3D; path=/; domain=lazi.vn
+Expires: Sat, 01 Jan 2000 00:00:01 GMT
+Cache-Control: post-check=0, pre-check=0, max-age=0
+Last-Modified: Thu, 03 Jan 2019 09:15:03 GMT
+Pragma: no-cache
+Content-Encoding: gzip
